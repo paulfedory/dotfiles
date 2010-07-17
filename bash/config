@@ -1,0 +1,8 @@
+# get current git branch
+function parse_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "("${ref#refs/heads/}")"
+}
+
+# set prompt with added git branch (if any), current working dir and smiley face 
+PS1="\$(parse_git_branch) \w ➜ "

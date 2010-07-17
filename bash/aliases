@@ -1,0 +1,29 @@
+alias db='/usr/local/Cellar/mysql/5.1.43/share/mysql/mysql.server start'
+alias dbs='/usr/local/Cellar/mysql/5.1.43/share/mysql/mysql.server stop'
+alias redis='redis-server /usr/local/etc/redis.conf'
+
+alias sc='./script/console'
+alias sdb='./script/dbconsole -p'
+alias sg='./script/generate'
+alias ss='./script/server'
+bp() { ssh mint@briarpatch-0${1}.vm.brightbox.net -l mint; }
+by() { ssh mint@briaryear-0${1}.vm.brightbox.net -l mint; }
+
+_get_project_names(){
+  local cur prev base
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD-1]}"
+  local names=$(for x in `ls -d1 /Users/$USER/Projects/*`; do echo ${x/\/Users\/$USER\/Projects\//} ; done)
+  COMPREPLY=( $(compgen -W "${names}" -- ${cur}) )
+}
+
+p(){ cd /Users/$USER/Projects/$1/; }
+
+complete -F _get_project_names p
+
+#if [ -f `brew --prefix`/etc/bash_completion ]; then
+#  . `brew --prefix`/etc/bash_completion
+#fi
+
+source ~/bin/dotfiles/git-completion.sh
