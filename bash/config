@@ -5,4 +5,6 @@ function parse_git_branch {
 }
 
 # set prompt with added git branch (if any), current working dir and smiley face 
-PS1="\$(parse_git_branch) \w ➜ "
+PS1="\$(parse_git_branch) \w ➜  "
+
+eval "$(rbenv init -)"
