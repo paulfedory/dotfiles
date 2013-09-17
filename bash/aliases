@@ -3,6 +3,7 @@ alias sdb='./script/dbconsole -p'
 alias sg='./script/generate'
 alias ss='./script/server'
 alias rit='ruby -Itest'
+alias b='bundle exec'
 bp() { ssh mint@briarpatch-0${1}.vm.brightbox.net -l mint; }
 by() { ssh mint@briaryear-0${1}.vm.brightbox.net -l mint; }
 ms() { ssh mint@mintstaging-0${1}.vm.brightbox.net -l mint; }

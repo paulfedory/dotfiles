@@ -7,4 +7,6 @@ function parse_git_branch {
 # set prompt with added git branch (if any), current working dir and smiley face 
 PS1="\$(parse_git_branch) \w ➜  "
 
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export EDITOR=nano
