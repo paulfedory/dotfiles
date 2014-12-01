@@ -2,5 +2,4 @@ PATH=$PATH:/usr/local/sbin
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:~/bin
 
-GOPATH=$HOME/.go
-GOROOT=/usr/local/go/
+export GOPATH=$HOME/.go
