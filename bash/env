@@ -1,4 +1,6 @@
 PATH=$PATH:/usr/local/sbin
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:~/bin
-PATH=/usr/local/share/python:$PATH
+
+GOPATH=$HOME/.go
+GOROOT=/usr/local/go/
