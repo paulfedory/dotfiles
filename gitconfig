@@ -3,6 +3,10 @@
   st = status
   co = checkout
 
+[core]
+  editor = subl -w
+  excludesfile = /Users/paulfedory/.gitignore_global
+
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix
@@ -30,4 +34,4 @@
   name = Paul Fedory
   email = paul.fedory@gmail.com
 [push]
-  default = simple
+  default = current
