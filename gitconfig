@@ -26,3 +26,8 @@
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
+[user]
+  name = Paul Fedory
+  email = paul.fedory@gmail.com
+[push]
+  default = simple

@@ -2,4 +2,7 @@ PATH=$PATH:/usr/local/sbin
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:~/bin
 
+# Add binstubs directory to PATH to avoid bundle execing everything
+PATH=.bundle/binstubs:$PATH
+
 export GOPATH=$HOME/.go
