@@ -1,0 +1,13 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Cucumber",
+		"Cucumber Step Finder",
+		"Git",
+		"Package Control",
+		"Sass"
+	]
+}
