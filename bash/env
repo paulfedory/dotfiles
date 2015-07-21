@@ -6,3 +6,5 @@ PATH=$PATH:~/bin
 PATH=.bundle/binstubs:$PATH
 
 export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
