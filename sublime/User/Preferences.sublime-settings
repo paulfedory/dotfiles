@@ -26,7 +26,8 @@
 		"CVS",
 		".bundle"
 	],
-	"font_size": 15,
+	"font_face": "Consolas",
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
