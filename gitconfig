@@ -4,7 +4,7 @@
   co = checkout
 
 [core]
-  editor = subl -w
+  editor = vim
   excludesfile = /Users/paulfedory/.gitignore_global
 
 [apply]
