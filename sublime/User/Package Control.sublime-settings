@@ -1,14 +1,12 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
-		"Ansible",
-		"Cucumber",
-		"Cucumber Step Finder",
+		"Elixir",
 		"Git",
-		"GoSublime",
 		"Package Control",
 		"Sass"
 	]

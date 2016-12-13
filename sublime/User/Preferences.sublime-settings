@@ -14,6 +14,7 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
+		"*.beam",
 		"node_modules/*",
 		"tmp/*"
 	],
