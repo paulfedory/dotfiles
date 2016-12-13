@@ -9,6 +9,6 @@ PS1="\$(parse_git_branch) \w ➜  "
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export EDITOR=nano
+export EDITOR=vim
 export HISTSIZE=10000
 export HISTCONTROL=ignoreboth
