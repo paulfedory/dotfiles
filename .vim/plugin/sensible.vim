@@ -21,10 +21,6 @@ set autoindent
 set backspace=indent,eol,start
 set complete-=i
 set smarttab
-set tabstop=2
-set softtabstop=0
-set expandtab
-set shiftwidth=2
 
 set nrformats-=octal
 
