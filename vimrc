@@ -23,3 +23,5 @@ set splitbelow
 set splitright
 
 set noswapfile
+
+set list listchars=tab:»·,trail:·,nbsp:·
