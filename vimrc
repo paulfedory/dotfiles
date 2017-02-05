@@ -17,4 +17,9 @@ set expandtab
 set shiftwidth=2
 
 set number
+set numberwidth=5
+
+set splitbelow
+set splitright
+
 set noswapfile
