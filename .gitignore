@@ -12,3 +12,5 @@ oscrypto-ca-bundle.crt
 
 vim/plugged
 vim/.netrwhist
+
+bundle/cache

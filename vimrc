@@ -1,10 +1,14 @@
 call plug#begin('~/.vim/plugged')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'elixir-lang/vim-elixir'
-Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
