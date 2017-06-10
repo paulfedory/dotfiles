@@ -18,6 +18,7 @@
 		"node_modules/*",
 		"tmp/*"
 	],
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -25,12 +26,15 @@
 		".git",
 		".hg",
 		"CVS",
-		".bundle"
+		".bundle",
+		".tmp",
+		"webpack_build"
 	],
 	"font_face": "Consolas",
-	"font_size": 12,
+	"font_size": 13,
 	"ignored_packages":
 	[
+		"SublimeLinter",
 		"Vintage"
 	],
 	"rulers":
