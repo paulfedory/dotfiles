@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nixprime/cpsm'
 Plug 'elixir-lang/vim-elixir'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mxw/vim-jsx'
@@ -16,6 +17,7 @@ call plug#end()
 set grepprg=ag\ --nogroup\ --nocolor
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 set tabstop=2
 set softtabstop=0
