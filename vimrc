@@ -25,7 +25,7 @@ set expandtab
 set shiftwidth=2
 set clipboard=unnamed
 
-set number
+set relativenumber
 set numberwidth=5
 
 set splitbelow
