@@ -26,6 +26,7 @@ set shiftwidth=2
 set clipboard=unnamed
 
 set relativenumber
+set number
 set numberwidth=5
 
 set splitbelow
