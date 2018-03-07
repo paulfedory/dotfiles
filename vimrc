@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
+Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
-Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'nixprime/cpsm'
 Plug 'elixir-lang/vim-elixir'
@@ -20,13 +20,8 @@ let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers= ['eslint']
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_ruby_rubocop_args='-c .ruby-style.yml'
+let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop']}
+let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 
 set tabstop=2
 set softtabstop=0
