@@ -30,7 +30,7 @@
 		".tmp",
 		"webpack_build"
 	],
-	"font_face": "Consolas",
+	"font_face": "Operator Mono",
 	"font_size": 13,
 	"ignored_packages":
 	[
