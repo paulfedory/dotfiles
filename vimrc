@@ -12,6 +12,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'elmcast/elm-vim'
 call plug#end()
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
@@ -22,6 +23,8 @@ let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop']}
 let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
+
+let g:elm_format_autosave = 1
 
 set tabstop=2
 set softtabstop=0
