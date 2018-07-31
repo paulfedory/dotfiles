@@ -1,0 +1,7 @@
+p() { cd /Users/$USER/Projects/$1; }
+compctl -W /Users/$USER/Projects/ -/ p
+
+alias rit='ruby -Itest'
+alias b='bundle exec'
+alias gt='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias g='git grep -3 -n -F --heading -p'

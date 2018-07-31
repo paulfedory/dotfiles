@@ -5,6 +5,7 @@ all: symlinks
 symlinks:
 	@ln -nsf $(DIR)/bashrc ~/.bashrc
 	@ln -nsf $(DIR)/bash_profile ~/.bash_profile
+	@ln -nsf $(DIR)/zshrc ~/.zshrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
 	@ln -nsf $(DIR)/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
