@@ -48,3 +48,7 @@ nnoremap <C-J> m`o<Esc>``
 nnoremap <C-K> m`O<Esc>``
 nnoremap <tab> %
 vnoremap <tab> %
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
