@@ -97,5 +97,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshrc="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-p() { cd /Users/$USER/Projects/$1; }
-compctl -W /Users/$USER/Projects/ -/ p
