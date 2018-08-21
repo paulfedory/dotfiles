@@ -35,5 +35,7 @@
   email = paul.fedory@gmail.com
 [push]
   default = current
+[fetch]
+  prune = true
 [branch]
 	autoSetupMerge = always
