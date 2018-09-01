@@ -6,7 +6,6 @@
 [core]
   editor = vim
   excludesfile = /Users/paulfedory/.gitignore_global
-  pager = less -F -X
 
 [apply]
   # Detect whitespace errors when applying a patch
@@ -40,3 +39,7 @@
   prune = true
 [branch]
   autoSetupMerge = always
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+
