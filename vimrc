@@ -22,6 +22,7 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop']}
+let g:ale_fixers = {'javascript': ['eslint']}
 let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 
 let g:elm_format_autosave = 1
