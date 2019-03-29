@@ -7,15 +7,11 @@ function parse_git_branch {
 # set prompt with added git branch (if any), current working dir and smiley face 
 PS1="\$(parse_git_branch) \w ➜  "
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 export EDITOR=vim
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend # append to history, don't overwrite it
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
