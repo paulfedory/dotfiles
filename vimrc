@@ -24,7 +24,7 @@ let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
-let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop']}
+let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
 let g:ale_fixers = {'javascript': ['eslint']}
 let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 
