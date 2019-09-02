@@ -98,6 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshrc="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. $(brew --prefix asdf)/asdf.sh
-. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
