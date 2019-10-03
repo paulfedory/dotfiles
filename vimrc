@@ -28,6 +28,7 @@ let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
 let g:ale_fixers = {'javascript': ['eslint']}
 let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
+let g:ale_javascript_eslint_options = '-c webpack/.eslintrc.json --resolve-plugins-relative-to webpack'
 
 let g:elm_format_autosave = 1
 
