@@ -11,4 +11,3 @@ export PATH=$PATH:$GOBIN
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
-
