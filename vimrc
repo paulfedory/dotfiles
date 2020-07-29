@@ -17,6 +17,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'elmcast/elm-vim'
 Plug 'jparise/vim-graphql'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 call plug#end()
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
