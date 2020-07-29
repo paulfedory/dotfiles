@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'nixprime/cpsm'
@@ -26,7 +26,7 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
-let g:ale_fixers = {'javascript': ['eslint']}
+let g:ale_fixers = {'javascript': ['eslint'], 'elixir': ['mix_format']}
 let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 let g:ale_javascript_eslint_options = '-c webpack/.eslintrc.json --resolve-plugins-relative-to webpack'
 
