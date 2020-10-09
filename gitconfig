@@ -2,6 +2,7 @@
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(white)%s%Creset %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --
   st = status
   co = checkout
+  pushf = push --force-with-lease
 
 [core]
   editor = vim
