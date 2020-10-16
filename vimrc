@@ -6,10 +6,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jandamm/cpsm'
 Plug 'elixir-lang/vim-elixir'
 Plug 'hail2u/vim-css3-syntax'
-" Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+" Plug 'peitalin/vim-jsx-typescript'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
@@ -30,7 +30,7 @@ let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
 let g:ale_fixers = {'javascript': ['eslint'], 'elixir': ['mix_format']}
-let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
+" let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 
 let g:elm_format_autosave = 1
 
