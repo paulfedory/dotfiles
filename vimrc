@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'jandamm/cpsm'
 " Plug 'nixprime/cpsm' old do not use
@@ -26,7 +27,7 @@ call plug#end()
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 " set grepprg=ag\ --nogroup\ --nocolor
 set grepprg=rg\ --color=never
-let g:ctrlp_user_command = 'rg %s --files --glob ""'
+" let g:ctrlp_user_command = 'rg %s --files --glob ""'
 " let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 " let g:ctrlp_use_caching = 0
 " let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
