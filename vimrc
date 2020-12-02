@@ -55,7 +55,7 @@ set noswapfile
 
 set list listchars=tab:»·,trail:·,nbsp:·
 
-nmap <C-P> :FZF<CR>
+nmap <C-P> :GFiles<CR>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <C-J> m`o<Esc>``
 nnoremap <C-K> m`O<Esc>``
