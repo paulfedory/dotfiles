@@ -12,3 +12,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export FZF_DEFAULT_COMMAND='rg --files'
 
 export PATH="/usr/local/opt/node@16/bin:$PATH"
+export DISABLE_SPRING=true
