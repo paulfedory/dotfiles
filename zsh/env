@@ -13,5 +13,3 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export DISABLE_SPRING=true
-export REDIS_URL="redis://localhost:6379/0"
-export SIDEKIQ_ENABLED=true
