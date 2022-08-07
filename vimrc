@@ -24,8 +24,14 @@ call plug#end()
 
 set grepprg=rg\ --color=never
 
-let g:ale_linters = {'javascript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
+let g:ale_linters = {'javascript': ['eslint'], 'typescript': ['eslint'], 'ruby': ['rubocop'], 'graphql': ['gqlint']}
 let g:ale_fixers = {'javascript': ['eslint'], 'elixir': ['mix_format']}
+let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
+let g:airline#extensions#ale#enabled = 1
+" let g:ale_linters_explicit = 1
+let g:ale_linters_ignore = {'typescript': ['tsserver'], 'javascript': ['tsserver'], 'typescriptreact': ['tsserver']}
+
+
 " let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
