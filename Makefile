@@ -13,3 +13,5 @@ symlinks:
 	@ln -nvsf $(DIR)/tool-versions ~/.tool-versions
 	@ln -nvsf $(DIR)/vim ~/.vim
 	@ln -nsf $(DIR)/vimrc ~/.vimrc
+	@ln -nsf $(DIR)/vimrc ~/.config/nvim/init.vim
+	@ln -nvsf $(DIR)/vim/autoload ~/.local/share/nvim/site
