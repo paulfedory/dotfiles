@@ -67,6 +67,7 @@ nnoremap K :Rg <C-R><C-W><CR>
 nnoremap <C-J> m`o<Esc>``
 nnoremap <C-K> m`O<Esc>``
 nnoremap <tab> %
+nnoremap <esc> :noh<return><esc>
 vnoremap <tab> %
 
 " from COC.nvim
