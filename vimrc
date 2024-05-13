@@ -16,10 +16,13 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'elmcast/elm-vim'
 Plug 'jparise/vim-graphql'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'L3MON4D3/LuaSnip'
+
+Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 call plug#end()
 
 set grepprg=rg\ --color=never
@@ -31,11 +34,9 @@ let g:airline#extensions#ale#enabled = 1
 " let g:ale_linters_explicit = 1
 " let g:ale_linters_ignore = {'typescript': ['tsserver'], 'javascript': ['tsserver'], 'typescriptreact': ['tsserver']}
 
-
 " let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
-let g:elm_format_autosave = 1
 let g:airline_powerline_fonts = 1
 
 set tabstop=2
@@ -69,18 +70,6 @@ nnoremap <C-K> m`O<Esc>``
 nnoremap <tab> %
 nnoremap <esc> :noh<return><esc>
 vnoremap <tab> %
-
-" from COC.nvim
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1):
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
-" Make <CR> to accept selected completion item or notify coc.nvim to format
-" <C-g>u breaks current undo, please make your own choice.
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! CheckBackspace() abort
   let col = col('.') - 1
