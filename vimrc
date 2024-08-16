@@ -3,6 +3,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 Plug 'scrooloose/nerdtree'
+
+" Plug 'nvim-neo-tree/neo-tree.nvim'
+" Plug 'MunifTanjim/nui.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-tree/nvim-web-devicons'
+
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'elixir-lang/vim-elixir'

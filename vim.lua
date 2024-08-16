@@ -9,4 +9,6 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
--- require('lspconfig').example_server.setup({})
+require('lspconfig').elixirls.setup({
+  cmd = { "elixir-ls" },
+})
