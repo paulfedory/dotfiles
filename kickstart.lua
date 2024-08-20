@@ -647,6 +647,17 @@ require("lazy").setup({
 		end,
 	},
 
+	{ -- Github copilot
+		"zbirenbaum/copilot.lua",
+		enabled = true,
+		cmd = "Copilot",
+		event = "InsertEnter",
+		opts = {
+			suggestion = { enabled = false },
+			panel = { enabled = false },
+		},
+	},
+
 	{ -- Autoformat
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
@@ -719,6 +730,10 @@ require("lazy").setup({
 			--  into multiple repos for maintenance purposes.
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-path",
+			{
+				"zbirenbaum/copilot-cmp",
+				opts = {},
+			},
 		},
 		config = function()
 			-- See `:help cmp`
@@ -787,6 +802,7 @@ require("lazy").setup({
 					--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 				}),
 				sources = {
+					{ name = "copilot" },
 					{
 						name = "lazydev",
 						-- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
@@ -811,7 +827,7 @@ require("lazy").setup({
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		config = function()
 			require("catppuccin").setup({
-				styles = { comments = {} },
+				no_italic = true,
 			})
 
 			-- setup must be called before loading
