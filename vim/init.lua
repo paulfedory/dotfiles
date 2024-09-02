@@ -7,6 +7,10 @@ vim.g.maplocalleader = " "
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Disable default netrw file viewer
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+--
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -70,6 +74,9 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- reads the hex gui color values of various highlight groups
+vim.opt.termguicolors = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -151,7 +158,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
-	"preservim/nerdtree",
 
 	-- NOTE: Plugins can also be added by using a table,
 	-- with the first argument being the link and the following
@@ -765,7 +771,18 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = { signs = false },
 	},
-
+	{ -- Add cool tabs for the buffers
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("bufferline").setup({
+				options = {
+					mode = "tabs",
+				},
+			})
+		end,
+	},
 	{ -- Collection of various small independent plugins/modules
 		"echasnovski/mini.nvim",
 		config = function()
@@ -859,7 +876,7 @@ require("lazy").setup({
 	-- require 'kickstart.plugins.indent_line',
 	-- require 'kickstart.plugins.lint',
 	-- require 'kickstart.plugins.autopairs',
-	-- require 'kickstart.plugins.neo-tree',
+	require("kickstart.plugins.neo-tree"),
 	-- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
