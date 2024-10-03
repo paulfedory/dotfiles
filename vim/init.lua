@@ -515,7 +515,7 @@ require("lazy").setup({
 				-- But for many setups, the LSP (`tsserver`) will work just fine
 				-- tsserver = {},
 				--
-				tsserver = {},
+				-- tsserver = {},
 				elixirls = {
 					cmd = { "elixir-ls" },
 				},
@@ -592,6 +592,7 @@ require("lazy").setup({
 				desc = "[F]ormat buffer",
 			},
 		},
+		-- log_level = vim.log.levels.TRACE,
 		opts = {
 			notify_on_error = false,
 			format_on_save = function(bufnr)
@@ -600,13 +601,13 @@ require("lazy").setup({
 				-- languages here or re-enable it for the disabled ones.
 				local disable_filetypes = { c = true, cpp = true }
 				return {
-					timeout_ms = 500,
+					timeout_ms = 2500,
 					lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
 				}
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				elixir = { "mix format" },
+				elixir = { "mix" },
 				-- Conform can also run multiple formatters sequentially
 				-- python = { "isort", "black" },
 				--
