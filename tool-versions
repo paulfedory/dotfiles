@@ -1,4 +1,4 @@
 ruby 3.3.0
 erlang 27.0.1
 elixir 1.17.2-otp-27
-elixir-ls 0.21.1
+elixir-ls 0.23.0
