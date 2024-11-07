@@ -616,6 +616,7 @@ require("lazy").setup({
 				scss = { "prettier" },
 				html = { "prettier" },
 				md = { "prettier" },
+				markdown = { "prettier" },
 				lua = { "stylua" },
 				elixir = { "mix" },
 				-- Conform can also run multiple formatters sequentially
