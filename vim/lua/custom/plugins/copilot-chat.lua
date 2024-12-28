@@ -43,6 +43,7 @@ return {
     "CopilotC-Nvim/CopilotChat.nvim",
     -- version = "v3.3.0",
     dependencies = {
+      { "zbirenbaum/copilot.lua" }, -- or zbirenbaum/copilot.lua
       { "nvim-lua/plenary.nvim" },
     },
     opts = {
