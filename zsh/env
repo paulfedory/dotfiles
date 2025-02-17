@@ -13,3 +13,6 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export DISABLE_SPRING=true
+
+ASDF_DATA_DIR=$HOME/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"

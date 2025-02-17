@@ -1,4 +1,4 @@
-ruby 3.3.0
+ruby 3.4.2
 erlang 27.0.1
 elixir 1.18.0-otp-27
 elixir-ls 0.23.0
