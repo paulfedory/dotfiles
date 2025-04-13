@@ -18,7 +18,7 @@ require("lazy").setup({
   require 'plugins.which-key', -- pending keybinds
   require 'plugins.telescope', -- fuzzy finder (files, lsp)
   require 'plugins.lsp', -- Language Server
-  require 'plugins.ai', -- AI
+  -- require 'plugins.ai', -- AI
   require 'plugins.autoformat', -- Autoformat, linting
   require 'plugins.autocompletion', -- Autocompletion
   require 'plugins.colorscheme', -- Color scheme
@@ -27,7 +27,8 @@ require("lazy").setup({
   require 'plugins.mini', -- various small quality of life plugins
   require 'plugins.treesitter', -- highlight, edit, navigate code
   require 'plugins.neo-tree', -- tree file explorer
-  require 'plugins.copilot-chat', -- tree file explorer
+  -- require 'plugins.copilot-chat', -- tree file explorer
+
 
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
