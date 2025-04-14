@@ -18,7 +18,7 @@ require("lazy").setup({
   require 'plugins.which-key', -- pending keybinds
   require 'plugins.telescope', -- fuzzy finder (files, lsp)
   require 'plugins.lsp', -- Language Server
-  -- require 'plugins.ai', -- AI
+  require 'plugins.ai', -- AI
   require 'plugins.autoformat', -- Autoformat, linting
   require 'plugins.autocompletion', -- Autocompletion
   require 'plugins.colorscheme', -- Color scheme
