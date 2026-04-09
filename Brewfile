@@ -1,4 +1,6 @@
 brew "git"
+brew "neovim"
+brew "mise"
 brew "node"
 brew "bat"
 brew "tldr"

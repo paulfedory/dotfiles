@@ -8,7 +8,6 @@ symlinks:
 	@ln -nsf $(DIR)/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -nsf $(DIR)/gitignore_global ~/.gitignore_global
-	@ln -nsf $(DIR)/agignore ~/.agignore
 	@ln -nsf $(DIR)/mise-config.toml ~/.config/mise/config.toml
 	@ln -nsf $(DIR)/vim/init.lua ~/.config/nvim/init.lua
 	@ln -nvsf $(DIR)/vim/lua ~/.config/nvim/lua
