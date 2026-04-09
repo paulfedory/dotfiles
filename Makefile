@@ -3,7 +3,6 @@ DIR=~/bin/dotfiles
 all: symlinks
 
 symlinks:
-	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
 	@ln -nsf $(DIR)/zshrc ~/.zshrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
 	@ln -nsf $(DIR)/gemrc ~/.gemrc

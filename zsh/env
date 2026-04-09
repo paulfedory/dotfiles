@@ -12,6 +12,3 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export FZF_DEFAULT_COMMAND='rg --files'
 
 export DISABLE_SPRING=true
-
-ASDF_DATA_DIR=$HOME/.asdf
-export PATH="$ASDF_DATA_DIR/shims:$PATH"

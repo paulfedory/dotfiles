@@ -63,7 +63,7 @@ DEFAULT_USER="paulfedory"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
+  mise
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
